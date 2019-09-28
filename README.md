@@ -54,7 +54,7 @@ High level list of items completed.
 - [X] create an input box containing a function on each page
 - [X] index.js contains the links to each page
 - [X] creating a 'next' button to link user to next page
-- [ ]
+- [ ] create reducers fetching payload from components
 - [ ]
 - [ ]
 - [ ]

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux'
 
 class Home extends Component {
 
@@ -11,6 +12,7 @@ class Home extends Component {
             return alert('Please select number');
         }
         else {
+            this.props.dispatch({type: 'ADD_RATE_FEEl', payload: this.state.feeling})
             this.props.history.push('/Comprehend');
         }
     }
@@ -56,4 +58,8 @@ class Home extends Component {
   }
 }
 
-export default Home;
+const putReduxStateOnProps = (reduxState) =>({
+    reduxState
+  })
+
+export default connect(putReduxStateOnProps) (Home);
