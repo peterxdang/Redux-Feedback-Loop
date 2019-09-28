@@ -49,11 +49,11 @@ Link to a read-only version of your scope document or other relevant documentati
 ​
 High level list of items completed.
 ​
-- [ ] creating redux store and connecting components
-- [ ] creating a database using SQL and prosgreSQL
-- [ ] create an input box containing a function on each page
-- [ ] index.js contains the links to each page
-- [ ] creating a 'next' button to link user to next page
+- [X] creating redux store and connecting components
+- [X] creating a database using SQL and prosgreSQL
+- [X] create an input box containing a function on each page
+- [X] index.js contains the links to each page
+- [X] creating a 'next' button to link user to next page
 - [ ]
 - [ ]
 - [ ]

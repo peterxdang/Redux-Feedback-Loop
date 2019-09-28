@@ -2,8 +2,24 @@ import React, { Component } from 'react';
 
 class Home extends Component {
 
+    state = {
+        feeling: ''
+    }
+
     handleClick = () => {
-        this.props.history.push('/Comprehend');
+        if (this.state.feeling === '') {
+            return alert('Please select number');
+        }
+        else {
+            this.props.history.push('/Comprehend');
+        }
+    }
+
+    onChange = (event) => {
+       //console.log(Number(event.target.value));
+       this.setState({
+           feeling: Number(event.target.value)
+       })
     }
   render() {
     return (
@@ -12,7 +28,27 @@ class Home extends Component {
        
         <br/>
         <h2>How are You Feeling Today?</h2>
-        <input placeholder = "insert number"></input>
+        <label>
+            <input type ="radio" name = "feel" value = "1" onChange = {this.onChange}/>
+             1
+        </label>
+        <label>
+            <input type ="radio" name = "feel" value = "2" onChange = {this.onChange}/>
+             2
+        </label>
+        <label>
+            <input type ="radio" name = "feel" value = "3" onChange = {this.onChange}/>
+             3
+        </label>
+        <label>
+            <input type ="radio" name = "feel" value = "4" onChange = {this.onChange}/>
+             4
+        </label>
+        <label>
+            <input type ="radio" name = "feel" value = "5" onChange = {this.onChange}/>
+             5
+        </label>
+        <br/> <br/>
         <button onClick = {this.handleClick}>Next</button>
       </div>
       //</Router>
