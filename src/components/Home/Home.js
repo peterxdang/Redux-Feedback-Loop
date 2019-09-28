@@ -1,15 +1,8 @@
 import React, { Component } from 'react';
 
-import Comprehend from '../Comprehend/Comprehend';
-import Support from '../Support/Support';
-import Comments from '../Comments/Comments';
-import Review from '../Review/Review';
-
-
 class Home extends Component {
 
     handleClick = () => {
-        console.log('home click')
         this.props.history.push('/Comprehend');
     }
   render() {
