@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
+import Rating from '../Rating/Rating'
 
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
 import {createMuiTheme} from '@material-ui/core/styles/'
@@ -44,29 +45,10 @@ class Home extends Component {
      
     <MuiThemeProvider theme = {theme}>
       <div className="App">
-       
-        <br/>
+        <br/><br/>
         <h2>How are You Feeling Today?</h2>
-        <label>
-            <input type ="radio" name = "feel" value = "1" onChange = {this.onChange}/>
-             1
-        </label>
-        <label>
-            <input type ="radio" name = "feel" value = "2" onChange = {this.onChange}/>
-             2
-        </label>
-        <label>
-            <input type ="radio" name = "feel" value = "3" onChange = {this.onChange}/>
-             3
-        </label>
-        <label>
-            <input type ="radio" name = "feel" value = "4" onChange = {this.onChange}/>
-             4
-        </label>
-        <label>
-            <input type ="radio" name = "feel" value = "5" onChange = {this.onChange}/>
-             5
-        </label>
+        <br/>
+        <Rating onChange = {this.onChange}/>
         <br/> <br/>
         <Button text = "Next" onClick = {this.handleClick}/>
       </div>

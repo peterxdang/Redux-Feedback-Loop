@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import '../App/App.css';
-import {connect} from 'react-redux'
+import {connect} from 'react-redux';
+import Rating from '../Rating/Rating';
 
-import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
-import {createMuiTheme} from '@material-ui/core/styles/'
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import {createMuiTheme} from '@material-ui/core/styles/';
 import Button from '../elements/buttons';
 import blue from '@material-ui/core/colors/blue';
 import { green } from '@material-ui/core/colors';
@@ -48,28 +49,11 @@ class Comprehend extends Component {
     return (
     <MuiThemeProvider theme = {theme}>
       <div className="App">
+        <br/><br/>
         <h2>How well are you understanding the content?</h2>
-        <label>
-            <input type ="radio" name = "understand" value = "1" onChange = {this.onChange}/>
-             1
-        </label>
-        <label>
-            <input type ="radio" name = "understand" value = "2" onChange = {this.onChange}/>
-             2
-        </label>
-        <label>
-            <input type ="radio" name = "understand" value = "3" onChange = {this.onChange}/>
-             3
-        </label>
-        <label>
-            <input type ="radio" name = "understand" value = "4" onChange = {this.onChange}/>
-             4
-        </label>
-        <label>
-            <input type ="radio" name = "understand" value = "5" onChange = {this.onChange}/>
-             5
-        </label>
-        <br/> <br/>
+        <br/>
+        <Rating onChange = {this.onChange}/>
+        <br/><br/>
         <Button text = "Next" onClick = {this.handleClick}/>
       </div>
       </MuiThemeProvider>

@@ -41,9 +41,11 @@ class Comments extends Component {
     return (
       <MuiThemeProvider theme = {theme}>
       <div className="App">
-        <h2>Any comments you want to leave?</h2>
-        <input placeholder = "Comments" onChange = {event => {this.onChange(event)}}></input>
         <br/><br/>
+        <h2>Any comments you want to leave?</h2>
+        <br/>
+        <input placeholder = "Comments" onChange = {event => {this.onChange(event)}}></input>
+        <br/><br/><br/>
         <Button text = "Next" onClick = {this.handleClick}/>
       </div>
       </MuiThemeProvider>
