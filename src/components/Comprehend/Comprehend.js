@@ -70,7 +70,7 @@ class Comprehend extends Component {
              5
         </label>
         <br/> <br/>
-        <Button onClick = {this.handleClick}/>
+        <Button text = "Next" onClick = {this.handleClick}/>
       </div>
       </MuiThemeProvider>
     );

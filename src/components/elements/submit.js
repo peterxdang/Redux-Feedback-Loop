@@ -17,7 +17,6 @@ render () {
     const {classes} = this.props; 
     return (
        <Button onClick ={this.props.onClick} variant = "outlined" color="secondary">
-           Submit
        </Button>
     )
 

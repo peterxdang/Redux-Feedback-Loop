@@ -68,7 +68,7 @@ class Support extends Component {
              5
         </label>
         <br/> <br/>
-        <Button onClick = {this.handleClick}/>
+        <Button text = "next"  onClick = {this.handleClick}/>
       </div>
       </MuiThemeProvider>
     );

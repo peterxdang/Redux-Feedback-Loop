@@ -52,7 +52,7 @@ class Review extends Component {
         <p>Support: {this.state.object.support}</p>
         <p>Comments: {this.state.object.comment}</p>
         <br/><br/>
-        <Button onClick = {this.handleClick}/>
+        <Button text = "Submit" onClick = {this.handleClick}/>
       </div>
       </MuiThemeProvider>
     );

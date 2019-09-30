@@ -44,7 +44,7 @@ class Comments extends Component {
         <h2>Any comments you want to leave?</h2>
         <input placeholder = "Comments" onChange = {event => {this.onChange(event)}}></input>
         <br/><br/>
-        <Button onClick = {this.handleClick}/>
+        <Button text = "Next" onClick = {this.handleClick}/>
       </div>
       </MuiThemeProvider>
     );

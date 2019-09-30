@@ -68,7 +68,7 @@ class Home extends Component {
              5
         </label>
         <br/> <br/>
-        <Button onClick = {this.handleClick}>Next</Button>
+        <Button text = "Next" onClick = {this.handleClick}/>
       </div>
       </MuiThemeProvider>
     );

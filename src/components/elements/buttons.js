@@ -16,8 +16,8 @@ class Buttons extends Component {
 render () {
     const {classes} = this.props; 
     return (
-       <Button onClick ={this.props.onClick} variant = "outlined" color="primary">
-           Next
+       <Button onClick ={this.props.onClick} variant = "outlined" color = "primary">
+           {this.props.text}
        </Button>
     )
 
