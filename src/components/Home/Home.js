@@ -1,6 +1,22 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
 
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
+import {createMuiTheme} from '@material-ui/core/styles/'
+import Button from '../elements/buttons';
+import blue from '@material-ui/core/colors/blue';
+import { green } from '@material-ui/core/colors';
+
+
+const theme = createMuiTheme({
+    palette: {
+      primary: blue,
+      secondary: green,
+      contrastThreshold: 3,
+      tonalOffset: .2
+    }
+  })
+
 class Home extends Component {
 
     state = {
@@ -25,7 +41,8 @@ class Home extends Component {
     }
   render() {
     return (
-      //<Router>
+     
+    <MuiThemeProvider theme = {theme}>
       <div className="App">
        
         <br/>
@@ -51,9 +68,9 @@ class Home extends Component {
              5
         </label>
         <br/> <br/>
-        <button onClick = {this.handleClick}>Next</button>
+        <Button onClick = {this.handleClick}>Next</Button>
       </div>
-      //</Router>
+      </MuiThemeProvider>
     );
   }
 }

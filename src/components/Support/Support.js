@@ -2,6 +2,21 @@ import React, { Component } from 'react';
 import '../App/App.css';
 import {connect} from 'react-redux'
 
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
+import {createMuiTheme} from '@material-ui/core/styles/'
+import Button from '../elements/buttons';
+import blue from '@material-ui/core/colors/blue';
+import { green } from '@material-ui/core/colors';
+
+
+const theme = createMuiTheme({
+    palette: {
+      primary: blue,
+      secondary: green,
+      contrastThreshold: 3,
+      tonalOffset: .2
+    }
+  })
 
 
 class Support extends Component {
@@ -29,7 +44,7 @@ class Support extends Component {
 
   render() {
     return (
-     
+      <MuiThemeProvider theme = {theme}>
       <div className="App">
         <h2>How well are you being supported?</h2>
         <label>
@@ -53,9 +68,9 @@ class Support extends Component {
              5
         </label>
         <br/> <br/>
-        <button onClick = {this.handleClick}>Next</button>
+        <Button onClick = {this.handleClick}/>
       </div>
-     
+      </MuiThemeProvider>
     );
   }
 }

@@ -3,6 +3,21 @@ import '../App/App.css';
 import {connect} from 'react-redux'
 import Axios from 'axios';
 
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
+import {createMuiTheme} from '@material-ui/core/styles/'
+import Button from '../elements/submit';
+import blue from '@material-ui/core/colors/blue';
+import { green } from '@material-ui/core/colors';
+
+
+const theme = createMuiTheme({
+    palette: {
+      primary: blue,
+      secondary: green,
+      contrastThreshold: 3,
+      tonalOffset: .2
+    }
+  })
 
 
 class Review extends Component {
@@ -29,19 +44,17 @@ class Review extends Component {
 
   render() {
     return (
-     
+      <MuiThemeProvider theme = {theme}>
       <div className="App">
-        <p>{JSON.stringify(this.props.reduxState)}</p>
-        <p>{this.state.object.feel}</p>
         <h2>Review Your Feedback</h2>
         <p>Feelings: {this.state.object.feel}</p>
         <p>Comprehension: {this.state.object.comprehend}</p>
         <p>Support: {this.state.object.support}</p>
         <p>Comments: {this.state.object.comment}</p>
         <br/><br/>
-        <button onClick = {this.handleClick}>Submit</button>
+        <Button onClick = {this.handleClick}/>
       </div>
-     
+      </MuiThemeProvider>
     );
   }
 }

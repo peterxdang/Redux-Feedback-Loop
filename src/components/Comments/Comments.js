@@ -2,6 +2,22 @@ import React, { Component } from 'react';
 import '../App/App.css';
 import {connect} from 'react-redux'
 
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
+import {createMuiTheme} from '@material-ui/core/styles/'
+import Button from '../elements/buttons';
+import blue from '@material-ui/core/colors/blue';
+import { green } from '@material-ui/core/colors';
+
+
+const theme = createMuiTheme({
+    palette: {
+      primary: blue,
+      secondary: green,
+      contrastThreshold: 3,
+      tonalOffset: .2
+    }
+  })
+
 
 
 class Comments extends Component {
@@ -16,7 +32,6 @@ class Comments extends Component {
     }
 
     onChange = (event) => {
-        console.log(event.target.value);
         this.setState({
             comments: event.target.value
         })
@@ -24,14 +39,14 @@ class Comments extends Component {
 
   render() {
     return (
-     
+      <MuiThemeProvider theme = {theme}>
       <div className="App">
         <h2>Any comments you want to leave?</h2>
         <input placeholder = "Comments" onChange = {event => {this.onChange(event)}}></input>
         <br/><br/>
-        <button onClick = {this.handleClick}>Next</button>
+        <Button onClick = {this.handleClick}/>
       </div>
-     
+      </MuiThemeProvider>
     );
   }
 }

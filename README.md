@@ -47,16 +47,14 @@ Link to a read-only version of your scope document or other relevant documentati
 ​
 ### Completed Features
 ​
-High level list of items completed.
-​
 - [X] creating redux store and connecting components
 - [X] creating a database using SQL and prosgreSQL
 - [X] create an input box containing a function on each page
 - [X] index.js contains the links to each page
 - [X] creating a 'next' button to link user to next page
-- [ ] create reducers fetching payload from components
-- [ ]
-- [ ]
+- [X] create reducers fetching payload from components
+- [X] create express route in server.js
+- [ ] 
 - [ ]
 - [ ] Final Styling 
 
