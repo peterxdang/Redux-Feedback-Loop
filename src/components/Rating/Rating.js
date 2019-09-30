@@ -7,6 +7,7 @@ class Rating extends Component {
       <div className="App">
 
         <label>
+            <span className = "spacing">{this.props.text1}</span>
             <input type ="radio" name = "feel" value = "1" onChange = {this.props.onChange}/>
              1
         </label>
@@ -25,6 +26,7 @@ class Rating extends Component {
         <label>
             <input type ="radio" name = "feel" value = "5" onChange = {this.props.onChange}/>
              5
+             <span className = "spacing">{this.props.text2}</span>
         </label>
       </div>
       

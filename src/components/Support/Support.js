@@ -48,9 +48,9 @@ class Support extends Component {
       <MuiThemeProvider theme = {theme}>
       <div className="App">
         <br/><br/>
-        <h2>How well are you being supported?</h2>
+        <h2>How Well Are You Being Supported?</h2>
         <br/>
-        <Rating onChange = {this.onChange}/>
+        <Rating text1 = "No Support" text2 ="Totally Supported" onChange = {this.onChange}/>
         <br/><br/>
         <Button text = "next"  onClick = {this.handleClick}/>
       </div>

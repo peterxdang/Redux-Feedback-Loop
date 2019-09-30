@@ -50,9 +50,9 @@ class Comprehend extends Component {
     <MuiThemeProvider theme = {theme}>
       <div className="App">
         <br/><br/>
-        <h2>How well are you understanding the content?</h2>
+        <h2>How Well Are You Understanding The Content?</h2>
         <br/>
-        <Rating onChange = {this.onChange}/>
+        <Rating text1 = "I'm Confused" text2 = "Everything's Clear" onChange = {this.onChange}/>
         <br/><br/>
         <Button text = "Next" onClick = {this.handleClick}/>
       </div>

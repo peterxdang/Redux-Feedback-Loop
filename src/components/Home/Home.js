@@ -46,9 +46,9 @@ class Home extends Component {
     <MuiThemeProvider theme = {theme}>
       <div className="App">
         <br/><br/>
-        <h2>How are You Feeling Today?</h2>
+        <h2>How Are You Feeling Today?</h2>
         <br/>
-        <Rating onChange = {this.onChange}/>
+        <Rating text1 = "Horrible..." text2 = "Great!"onChange = {this.onChange}/>
         <br/> <br/>
         <Button text = "Next" onClick = {this.handleClick}/>
       </div>
