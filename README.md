@@ -1,16 +1,14 @@
 # redux-feedback-loop
 ​
-One Paragraph of project description goes here. Link to the live version of the app if it's hosted on Heroku.
-
--the purpose of this project is to create an application that allow users to complete a survey. In this survey, 
-Users are able to fill one survey question for each page. The Next button will lead users to five other pages,
-allowing the user to review the information in the end, and submitting it. The information will be stored in
-a database.
+the purpose of this project is to create an application that allow users to provide feedback. In this app, 
+users are able to fill one survey question for each page. The Next button will lead users to five pages,
+and a page that allows them to review their before submitting it. All information from the user will be 
+stored in a database.
 ​
 ## Built With
 ​-node.js/angular.js
 -react/redux
--jquery/postgresSql
+-jquery/Sql/postgreSql
 -css/html
 -axios
 
@@ -24,7 +22,10 @@ These instructions will get you a copy of the project up and running on your loc
 Link to software that is required before you attempt to start the app (e.g. node, mongo).
 ​
 - [Node.js](https://nodejs.org/en/)
-- List other prerequisites here
+- [React.js](https://reactjs.org/)
+- [React-Redux](https://react-redux.js.org/)
+- [Postgresql](https://www.postgresql.org/)
+
 ​
 ​
 ### Installing
@@ -35,15 +36,7 @@ Steps to get the development environment running.
 2. `npm install`
 3. `npm start`, `npm client start`, `npm server start`
 4. `npm install redux, react-redux, redux-logger`
-​
-​
-## Screen Shot
-​
-Include one or two screen shots of your project here (optional). Remove if unused.
-​
-## Documentation
-​
-Link to a read-only version of your scope document or other relevant documentation here (optional). Remove if unused.
+4. `npm install @material-ui/core for styling buttons`
 ​
 ### Completed Features
 ​
@@ -51,19 +44,20 @@ Link to a read-only version of your scope document or other relevant documentati
 - [X] creating a database using SQL and prosgreSQL
 - [X] create an input box containing a function on each page
 - [X] index.js contains the links to each page
-- [X] creating a 'next' button to link user to next page
+- [X] create a 'next' button to link user to next page
 - [X] create reducers fetching payload from components
 - [X] create express route in server.js
-- [ ] 
-- [ ]
-- [ ] Final Styling 
+- [X] create input buttons/boxes into separate component
+- [X] create post function in app.js
+- [X] Final Styling with css
 
 ​
 ### Next Steps
 ​
 Features that you would like to add at some point in the future.
 ​
-- [ ] Feature c
+- [ ] A button for users to return to th previous page
+- [ ] Bootstrap
 ​
 ## Deployment
 ​
@@ -71,9 +65,8 @@ Add additional notes about how to deploy this on a live system
 ​
 ## Authors
 ​
-* Name of author(s)
-​
+* Peter Dang
 ​
 ## Acknowledgments
 ​
-* Hat tip to anyone who's code was used
+* Casie Siekman for providing the template for styling the buttons

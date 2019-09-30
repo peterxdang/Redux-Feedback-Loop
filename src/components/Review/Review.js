@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import '../App/App.css';
-import {connect} from 'react-redux'
+import {connect} from 'react-redux';
 import Axios from 'axios';
 
-import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
-import {createMuiTheme} from '@material-ui/core/styles/'
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import {createMuiTheme} from '@material-ui/core/styles/';
 import Button from '../elements/submit';
 import blue from '@material-ui/core/colors/blue';
 import { green } from '@material-ui/core/colors';

@@ -8,7 +8,7 @@ import Comprehend from '../Comprehend/Comprehend';
 import Support from '../Support/Support';
 import Comments from '../Comments/Comments';
 import Review from '../Review/Review';
-import thankYou from '../thankYou/thankYou'
+import thankYou from '../thankYou/thankYou';
 
 class App extends Component {
   render() {

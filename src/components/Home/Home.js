@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux'
-import Rating from '../Rating/Rating'
+import {connect} from 'react-redux';
+import Rating from '../Rating/Rating';
 
-import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
-import {createMuiTheme} from '@material-ui/core/styles/'
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import {createMuiTheme} from '@material-ui/core/styles/';
 import Button from '../elements/buttons';
 import blue from '@material-ui/core/colors/blue';
 import { green } from '@material-ui/core/colors';

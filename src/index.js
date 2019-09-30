@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App/App';
 import registerServiceWorker from './registerServiceWorker';
-import {Provider} from 'react-redux'
+import {Provider} from 'react-redux';
 import { createStore, applyMiddleware, combineReducers } from 'redux';
-import logger from 'redux-logger'
+import logger from 'redux-logger';
 
 //feelingRateReducer fetches rating from Home/
 const feelingRateReducer = (state = [], action) => {
