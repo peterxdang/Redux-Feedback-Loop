@@ -27,7 +27,6 @@ class Comprehend extends Component {
         comprehend: ''
     }
 
-
     handleClick = () => {
         if (this.state.comprehend === '') {
             return alert('Please select number');
