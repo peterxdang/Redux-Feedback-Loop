@@ -33,12 +33,14 @@ class Review extends Component {
 
     handleClick = (event) => {
       this.postFeedback();
-      this.props.history.push('/thankYou');
     }
 
     postFeedback = () => {
-      Axios.post('/api/info', this.state.object).then((result) => {
-        console.log(result)
+      Axios.post('/api/info', this.state.object).then((response) => {
+        console.log(response)
+        this.props.history.push('/thankYou');
+      }).catch((error) => {
+        alert('error from Post', error);
       })
     }
 

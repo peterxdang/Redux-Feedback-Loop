@@ -49,7 +49,7 @@ Steps to get the development environment running.
 - [X] create express route in server.js
 - [X] create input buttons/boxes into separate component
 - [X] create post function in app.js
-- [X] Final Styling with css
+- [X] Final Styling with css 
 
 ​
 ### Next Steps
